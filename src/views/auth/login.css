@@ -1,0 +1,73 @@
+.form-control,
+.btn {
+    border-radius: 0px !important;
+}
+
+.form {
+    position: relative;
+    top: 1%;
+}
+
+.titre {
+    position: relative;
+    top: 40%;
+    color: #ffff;
+    font-weight: bold;
+    font-size: 50px;
+}
+em {
+    font-family: "serif";
+    font-size: 15px;
+}
+
+.bg-image {
+    background-image: url("../../assets/images/bg.jpg");
+    /* The image used */
+    background-color: #cccccc;
+    /* Used if the image is unavailable */
+    height: 500px;
+    /* You must set a specified height */
+    background-position: center;
+    /* Center the image */
+    background-repeat: no-repeat;
+    /* Do not repeat the image */
+    background-size: cover;
+    /* Resize the background image to cover the entire container */
+}
+
+.bg-image-dim {
+    height: 200px;
+}
+
+@media (min-width: 576px) {
+    .form {
+        position: relative;
+        top: 10%;
+    }
+
+    .bg-image-dim {
+        height: 650px !important;
+    }
+}
+
+@media (min-width: 768px) {
+    .form {
+        position: relative;
+        top: 20%;
+    }
+
+    .bg-image-dim {
+        height: 750px !important;
+    }
+}
+
+@media (min-width: 992px) {
+    .form {
+        position: relative;
+        top: 12%;
+    }
+
+    .bg-image-dim {
+        height: 630px !important;
+    }
+}
