@@ -1,9 +1,10 @@
 import React from "react";
+import "./side.css"
 
 const SideNav = () => {
     return (
         <>
-            <div className="col-lg-3">
+            <div className="fixer col-lg-3">
 
                 {/* Advanced filter responsive toggler START */}
                 <div className="d-flex align-items-center d-lg-none">
@@ -27,13 +28,13 @@ const SideNav = () => {
                             {/* Card START */}
                             <div className="card overflow-hidden">
                                 {/* Cover image */}
-                                <div className="h-50px" style={{backgroundImage: "url(assets/images/bg/01.jpg)", backgroundPosition: "center", backgroundSize: "cover", backgroundRepeat: "no-repeat"}}></div>
+                                <div className="h-50px" style={{backgroundImage: "url("+ process.env.PUBLIC_URL + "assets/images/01.jpg)", backgroundPosition: "center", backgroundSize: "cover", backgroundRepeat: "no-repeat"}}></div>
                                 {/* Card body START */}
                                 <div className="card-body pt-0">
                                     <div className="text-center">
                                         {/* Avatar */}
                                         <div className="avatar avatar-lg mt-n5 mb-3">
-                                            <a href="#!"><img className="avatar-img rounded border border-white border-3" src="assets/images/avatar/07.jpg" alt="" /></a>
+                                            <a href="#!"><img className="avatar-img rounded border border-white border-3" src={process.env.PUBLIC_URL + "assets/images/07.jpg"} alt="" /></a>
                                         </div>
                                         {/* Info */}
                                         <h5 className="mb-0"> <a href="#!">Sam Lanson </a> </h5>
@@ -77,9 +78,6 @@ const SideNav = () => {
                                             <a className="nav-link" href="my-profile-connections.html"> <i class="bi bi-people" style={{fontSize: 1 + "rem", color: ""}}></i>&nbsp;<span>Friends </span></a>
                                         </li>
                                         <li className="nav-item">
-                                            <a className="nav-link" href="blog.html"> <i class="bi bi-newspaper" style={{fontSize: 1 + "rem", color: ""}}></i>&nbsp;<span>Latest News </span></a>
-                                        </li>
-                                        <li className="nav-item">
                                             <a className="nav-link" href="events.html"> <i class="bi bi-calendar-event" style={{fontSize: 1 + "rem", color: ""}}></i>&nbsp;<span>Events </span></a>
                                         </li>
                                         <li className="nav-item">
@@ -95,29 +93,6 @@ const SideNav = () => {
                                 </div>
                             </div>
                             {/* Card END */}
-
-                            {/* Helper link START */}
-                            <ul className="nav small mt-4 justify-content-center lh-1">
-                                <li className="nav-item">
-                                    <a className="nav-link" href="my-profile-about.html">About</a>
-                                </li>
-                                <li className="nav-item">
-                                    <a className="nav-link" href="settings.html">Settings</a>
-                                </li>
-                                <li className="nav-item">
-                                    <a className="nav-link" target="_blank" href="https://support.webestica.com/login">Support </a>
-                                </li>
-                                <li className="nav-item">
-                                    <a className="nav-link" target="_blank" href="docs/index.html">Docs </a>
-                                </li>
-                                <li className="nav-item">
-                                    <a className="nav-link" href="help.html">Help</a>
-                                </li>
-                                <li className="nav-item">
-                                    <a className="nav-link" href="privacy-and-terms.html">Privacy &amp; terms</a>
-                                </li>
-                            </ul>
-                            {/* Helper link END */}
                             {/* Copyright */}
                             <p className="small text-center mt-1">©2022 <a className="text-body" target="_blank" href="https://www.webestica.com/"> Webestica </a></p>
                         </div>
