@@ -2,6 +2,7 @@ import React from "react";
 import { Routes,Route } from 'react-router-dom';
 import Register from "./views/auth/register";
 import Login from "./views/auth/login";
+import Routeur from "./Routeur"
 
 const App = () => {
     var pathname = window.location.pathname
@@ -13,7 +14,8 @@ const App = () => {
                         <Route exact path='/login' element={<Login />}></Route>
                         <Route exact path='/register' element={<Register />}></Route>
                     </Routes>
-                    : 'bonjour la main page'
+                    : <Routeur/>
+                    
             }
         </>
     )
