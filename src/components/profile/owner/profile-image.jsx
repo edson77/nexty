@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffet} from "react";
 
 const ProfileImage = () => {
     return (
