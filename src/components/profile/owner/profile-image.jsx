@@ -1,6 +1,9 @@
 import React,{useEffet} from "react";
+import { Link } from "react-router-dom";
+import './image-style.css'
 
 const ProfileImage = () => {
+    var pathname = window.location.pathname
     return (
         <>
             <div class="card">
@@ -12,7 +15,7 @@ const ProfileImage = () => {
                         <div>
                             {/* Avatar */}
                             <div class="avatar avatar-xxl mt-n5 mb-3">
-                                <img class="avatar-img rounded-circle border border-white border-3" src={process.env.PUBLIC_URL + "assets/images/07.jpg"} alt="" />
+                                <img class="avatar-img rounded-circle border border-white border-3 profil-image-cov" src={process.env.PUBLIC_URL + "assets/images/07.jpg"} alt="" />
                             </div>
                         </div>
                         <div class="ms-sm-4 mt-sm-3">
@@ -50,13 +53,15 @@ const ProfileImage = () => {
                 <div class="card-footer mt-3 pt-2 pb-0">
                     {/* Nav profile pages */}
                     <ul class="nav nav-bottom-line align-items-center justify-content-center justify-content-md-start mb-0 border-0">
-                        <li class="nav-item"> <a class="nav-link active" href="my-profile.html"> Posts </a> </li>
-                        <li class="nav-item"> <a class="nav-link" href="my-profile-about.html"> About </a> </li>
+                        <li class="nav-item"> <Link class={ pathname =='/profile' ? 'nav-link active':'nav-link' } to="/profile"> Posts </Link> </li>
+                        <li class="nav-item"> <Link class={ pathname =='/profile/about' ? 'nav-link active':'nav-link' } to="/profile/about"> About </Link> </li>
+                       {/*
                         <li class="nav-item"> <a class="nav-link" href="my-profile-connections.html"> Connections <span class="badge bg-success bg-opacity-10 text-success small"> 230</span> </a> </li>
                         <li class="nav-item"> <a class="nav-link" href="my-profile-media.html"> Media</a> </li>
                         <li class="nav-item"> <a class="nav-link" href="my-profile-videos.html"> Videos</a> </li>
                         <li class="nav-item"> <a class="nav-link" href="my-profile-events.html"> Events</a> </li>
                         <li class="nav-item"> <a class="nav-link" href="my-profile-activity.html"> Activity</a> </li>
+                        */}
                     </ul>
                 </div>
             </div>

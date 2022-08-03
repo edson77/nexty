@@ -1,6 +1,7 @@
 import React from "react";
 import "bootstrap-icons/font/bootstrap-icons.css"
 import "./style.css"
+import { Link } from "react-router-dom";
 const NavBar = () => {
     return (
         <>
@@ -10,9 +11,9 @@ const NavBar = () => {
                 <nav className="navbar navbar-icon navbar-expand-lg">
                     <div className="container container-fluid">
                         {/* Logo START */}
-                        <a className="navbar-brand" href="index.html">
+                        <Link className="navbar-brand" to="/">
                             <img className="light-mode-item navbar-brand-item" src={process.env.PUBLIC_URL + "logo192.png"} alt="logo" />
-                        </a>
+                        </Link>
                         {/* Logo END */}
 
                         {/* Nav Search */}
@@ -84,9 +85,9 @@ const NavBar = () => {
                         {/* Nav right START */}
                         <ul className="nav flex-nowrap align-items-center ms-auto list-unstyled">
                             <li class="nav-item ms-2 dropdown nav-search">
-                                <a class="nav-link btn icon-md p-0" href="#" id="searchDropdown" role="button" data-bs-auto-close="outside" data-bs-display="static" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <i class="bi bi-person fs-5"> </i>
-                                </a>
+                                <Link class="nav-link btn icon-md p-0" to="/profile" id="searchDropdown" role="button" data-bs-auto-close="outside" data-bs-display="static" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img class="avatar-img mon-cercle-image-1" src={process.env.PUBLIC_URL + "assets/images/07.jpg"} alt="" />
+                                </Link>
                             </li>
                         </ul>
                         {/* Nav right END */}

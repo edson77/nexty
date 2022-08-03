@@ -1,0 +1,17 @@
+.mon-cercle-image {
+    height: 50px !important;
+    width: 50px !important;
+    border-radius: 50% !important;
+}
+
+.mon-cercle-image-1 {
+    height: 40px !important;
+    width: 50px !important;
+    border-radius: 50% !important;
+}
+
+.profil-image-cov {
+    height: 125px !important;
+    width: 180px !important;
+    border-radius: 50% !important;
+}

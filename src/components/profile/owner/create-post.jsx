@@ -1,4 +1,5 @@
 import React from "react";
+import './image-style.css'
 
 const CreatePost = () => {
     return (
@@ -7,7 +8,7 @@ const CreatePost = () => {
                 <div class="d-flex mb-3">
                     {/* Avatar */}
                     <div class="avatar avatar-xs me-2">
-                        <a href="#"> <img class="avatar-img rounded-circle" src="assets/images/avatar/07.jpg" alt="" /> </a>
+                        <a href="#"> <img class="avatar-img mon-cercle-image-1" src={process.env.PUBLIC_URL + "assets/images/07.jpg"} alt="" /> </a>
                     </div>
                     {/* Post input */}
                     <form class="w-100">

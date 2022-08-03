@@ -3,6 +3,7 @@ import { Routes, Route } from 'react-router-dom';
 import ProfileImage from './../../../components/profile/owner/profile-image'
 import SideBarProfile from "../../../components/profile/owner/side-bar";
 import Posts from "../../../components/profile/owner/posts";
+import About from "../../../components/profile/owner/about";
 const OwnerProfile = () => {
     return (
         <>
@@ -18,7 +19,9 @@ const OwnerProfile = () => {
 
                         {/* Debut de la section ou je vais faire le routage du profile */}
                         <Routes>
-                            <Route exact path='/' element={< Posts />}></Route>
+                            
+                            <Route exact path='/about' element={<About />}></Route>
+                            <Route exact path='/' element={<Posts />}></Route>
                         </Routes>
                         {/* Debut de la section ou je vais faire le routage du profile */}
                     </div>

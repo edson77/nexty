@@ -12,6 +12,7 @@ const Routeur = () => {
                 <Routes>
                     <Route exact path='/' element={<HomePage />}></Route>
                     <Route exact path='/profile' element={<OwnerProfile />}></Route>
+                    <Route exact path='/profile/*' element={<OwnerProfile />}></Route>
                 </Routes>
             </main>
         </>
