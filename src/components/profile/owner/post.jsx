@@ -44,7 +44,7 @@ const Post = () =>{
             <div class="card-body">
               <p>I'm thrilled to share that I've completed a graduate certificate course in project management with the president's honor roll.</p>
               {/* Card img */}
-              <img class="card-img mon-cercle-image" src={process.env.PUBLIC_URL + "assets/images/07.jpg"} alt="Post"/>
+              <img class="card-img" src={process.env.PUBLIC_URL + "assets/images/07.jpg"} alt="Post"/>
               {/* Feed react START */}
               <ul class="nav nav-stack py-3 small">
                 <li class="nav-item">
